@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#070B16"/>
+  <circle cx="970" cy="130" r="220" fill="#6366F1" fill-opacity="0.18"/>
+  <circle cx="210" cy="520" r="260" fill="#06B6D4" fill-opacity="0.12"/>
+  <rect x="90" y="80" width="1020" height="470" rx="28" fill="#0E1324" stroke="#1F2940"/>
+  <text x="140" y="220" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800">Omar Ahmad</text>
+  <text x="140" y="300" fill="#A5B4FC" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">Full Stack Engineer</text>
+  <text x="140" y="370" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="28">Laravel · Next.js · SaaS · AI Integrations</text>
+  <rect x="140" y="420" width="320" height="54" rx="27" fill="#111827" stroke="#2B364B"/>
+  <text x="175" y="455" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="24">omar-ahmad.netlify.app</text>
+</svg>

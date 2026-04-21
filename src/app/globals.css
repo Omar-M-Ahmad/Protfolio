@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@import "../styles/variables.css";
+@import "../styles/base.css";
+@import "../styles/components.css";
+@import "../styles/layout.css";
+@import "../styles/animations.css";
+@import "../styles/responsive.css";
+
+html,
+body {
+  min-height: 100%;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--nav-h) + 20px);
+}

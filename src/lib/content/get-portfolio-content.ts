@@ -61,6 +61,8 @@ export function getPortfolioContent(locale: Locale): PortfolioContent {
         tech: project.tech,
         visualVariant: project.visualVariant,
         liveUrl: project.liveUrl,
+        image: project.image,
+        imageAlt: project.imageAlt,
       })),
     },
     experience: {

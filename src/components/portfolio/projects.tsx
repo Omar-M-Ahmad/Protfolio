@@ -4,6 +4,38 @@ type Props = {
   projects: PortfolioContent['projects'];
 };
 
+function ProjectImageVisual({
+  image,
+  imageAlt,
+  labels,
+}: {
+  image: string;
+  imageAlt?: string;
+  labels: PortfolioContent['projects']['visualLabels'];
+}) {
+  return (
+    <div className="project-visual project-visual-image">
+      <div className="project-image-wrap">
+        <img
+          src={image}
+          alt={imageAlt ?? labels.imageAlt ?? labels.image ?? 'Project preview'}
+          className="project-image"
+          loading="lazy"
+        />
+      </div>
+
+      <div className="visual-badge visual-badge-image">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2" />
+          <circle cx="8.5" cy="8.5" r="1.5" />
+          <path d="M21 15l-5-5L5 21" />
+        </svg>
+        {labels.image ?? 'Preview'}
+      </div>
+    </div>
+  );
+}
+
 function ProjectVisual({
   variant,
   labels,
@@ -131,7 +163,11 @@ export function Projects({ projects }: Props) {
               </div>
             </div>
 
-            <ProjectVisual variant={project.visualVariant} labels={projects.visualLabels} />
+            {project.image ? (
+              <ProjectImageVisual image={project.image} imageAlt={project.imageAlt} labels={projects.visualLabels} />
+            ) : (
+              <ProjectVisual variant={project.visualVariant} labels={projects.visualLabels} />
+            )}
           </div>
         ))}
       </div>

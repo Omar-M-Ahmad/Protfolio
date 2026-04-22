@@ -81,6 +81,8 @@ export const en: PortfolioMessages = {
     visualLabels: {
       marketplace: 'Marketplace',
       saas: 'SaaS',
+      image: 'Preview',
+      imageAlt: 'Project preview image',
     },
     items: {
       multiVendorPlatform: {

@@ -54,6 +54,8 @@ export type ProjectItem = {
   tech: string[];
   visualVariant: 'marketplace' | 'saas';
   liveUrl?: string;
+  image?: string;
+  imageAlt?: string;
 };
 
 export type ExperienceId = 'independentDeveloper' | 'academicProjects';
@@ -129,6 +131,8 @@ export type PortfolioContent = {
     visualLabels: {
       marketplace: string;
       saas: string;
+      image?: string;
+      imageAlt?: string;
     };
     items: ProjectItem[];
   };
